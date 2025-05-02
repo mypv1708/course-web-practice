@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extended Form</title>
+  </head>
+  <body>
+    <form action="/index.html" method="post" enctype="multipart/form-data">
+      <!-- Username -->
+      <label for="username">Username</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your username"
+      />
+      <br /><br />
+
+      <!-- Password -->
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+      />
+      <br /><br />
+
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+      />
+      <br /><br />
+
+      <!-- Phone -->
+      <label for="phone">Phone</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Enter your phone number"
+      />
+      <br /><br />
+
+      <!-- Checkbox -->
+      <label
+        ><input type="checkbox" name="agree" required /> I agree to the
+        terms</label
+      >
+      <br /><br />
+
+      <!-- Radio buttons -->
+      <label>Gender:</label><br />
+      <label><input type="radio" name="gender" value="male" /> Male</label
+      ><br />
+      <label><input type="radio" name="gender" value="female" /> Female</label
+      ><br />
+      <label><input type="radio" name="gender" value="other" /> Other</label>
+      <br /><br />
+
+      <!-- Select menu -->
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="">-- Select your country --</option>
+        <option value="vn">Vietnam</option>
+        <option value="us">USA</option>
+        <option value="jp">Japan</option>
+      </select>
+      <br /><br />
+
+      <!-- Textarea -->
+      <label for="message">Message</label><br />
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        cols="30"
+        placeholder="Write something..."
+      ></textarea>
+      <br /><br />
+
+      <!-- File upload -->
+      <label for="file">Upload a file</label>
+      <input type="file" id="file" name="file" />
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
